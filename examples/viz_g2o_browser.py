@@ -14,4 +14,4 @@ if __name__ == '__main__':
 
     line_set = pgo3d.g2o_to_o3d(graph, traj_est)
     o3d.visualization.webrtc_server.enable_webrtc()
-    o3d.visualization.draw_geometries([line_set])
+    o3d.visualization.draw([line_set])
