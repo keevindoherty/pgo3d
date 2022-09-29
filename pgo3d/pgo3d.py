@@ -26,7 +26,7 @@ def g2o_to_traj(values, is3D):
     return PoseTrajectory3D(poses_se3 = traj,
                             timestamps = np.array(range(len(values.keys()))).astype(np.float64))
 
-def g2o_to_o3d(graph, traj, odom_color=[0,0,1], lc_color=[1,0,0], remove_outlier_lc=True):
+def g2o_to_o3d(graph, traj, odom_color=[0,0,1], lc_color=[0,0,1], remove_outlier_lc=True):
     """
     An o3d LineSet takes as argument `points` and `lines`
     `points`: a list of 3D points (as Vector3dVector)
